@@ -14,7 +14,9 @@ class String
     self.end_with?("!")
   end
 
-  def count_sentences
-
+  def count_sentences 
+    string = self.squeeze(”.”) 
+    string = string.squeeze(”!”) 
+    string.split(/[$.|?|!]/).count 
   end
 end
