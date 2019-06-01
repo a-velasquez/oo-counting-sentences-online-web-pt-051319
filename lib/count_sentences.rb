@@ -20,4 +20,4 @@ class String
   end
 end
 
-puts count_sentences
+count_sentences
