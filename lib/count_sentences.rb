@@ -14,8 +14,9 @@ class String
     self.end_with?("!")
   end
 
-  def count_sentences 
-    new_array = self.split(/[.?!]/).reject {|string| string.empty?}
-    return new_array.length
+  def count_sentences
+    scan(/[.!?]+(?=\s|\z)/).size
   end
+
 end
+
