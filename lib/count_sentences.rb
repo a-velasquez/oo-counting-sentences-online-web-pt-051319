@@ -19,3 +19,5 @@ class String
     return new_array.length
   end
 end
+
+puts count_sentences
